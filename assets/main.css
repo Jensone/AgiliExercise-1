@@ -27,19 +27,33 @@ h1, h2, h3, h4, h5, h6 {
 /* Sidebar style ***********************************************/
 .sidebar_menu { cursor: pointer; }
 
-/* État ouvert */
-.sidebar {
-    display: none;
+/* État fermé */
+.sidebar.active {
     position: fixed;
     right: 0;
     height: 100vh;
     width: 300px;
     text-align: center;
+    color: var(--dark);
     background-color: var(--sun);
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.35);
+    transition: width 300ms ease-out,
+                color 200ms ease-out;
 }
-/* État fermé (Écris ton code ici ⬇) */
-
+/* État ouvert (Écris ton code ici ⬇) */
+.sidebar {
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    width: 0px;
+    overflow: hidden;
+    text-align: center;
+    color: var(--sun);
+    background-color: var(--sun);
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.35);
+    transition: width 300ms ease-in,
+                color 200ms ease-out;
+}
 
 
 
