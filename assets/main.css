@@ -56,11 +56,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
-
-
-
-
 /* Global style ***********************************************/
 nav {
     position: fixed;
@@ -115,6 +110,9 @@ main section { justify-content: center; background-color: var(--moon); }
 
 /* Responsive settings *******************************************/
 @media screen and (max-width: 768px) {
+    main header {
+        padding: 6em 3em 3em 3em;
+    }
     .nav_items { display: none !important; }
     .concept_item {
         width: 80%;
